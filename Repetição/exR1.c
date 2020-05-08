@@ -6,9 +6,9 @@ int main(){
     valor = 0;
     soma = 0;
     while(valor <= n){
-        printf("%d\n", soma);
+        printf("ode %d\n", soma);
         valor = valor + 1;
         soma = valor + soma;
-    }
+    } 
 
 }

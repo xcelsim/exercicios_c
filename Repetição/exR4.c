@@ -10,6 +10,6 @@ int main(){
          valor = valor + 1;
          resultado = (valor +1)*n;
 
-     }
+     } 
 
 }
