@@ -9,7 +9,8 @@ a quilometragem total e a quantidade de dados inválidos digitados pelo usuário
 
 #include<stdio.h>
 int main(){
-    int km, numC, invalido, newL, kmT;
+    int km, numC, invalido, kmT;
+    char newL;
 
     numC = 0;
     invalido = 0;
@@ -32,19 +33,19 @@ int main(){
            numC = numC + 1;
         }
 
-        printf("Deseja realizar nova leitura? Digite 1 para sim e 0 para não: ");
-        scanf("%d", &newL);
+        printf("Deseja realizar nova leitura? ");
+        scanf(" %c", &newL);
         
-        if (newL != 1 && newL != 0){
-            while(newL != 1 && newL != 0){
+        if (newL != 'S' && newL != 'N'){
+            while(newL != 'S'){
             invalido = invalido + 1;
-            printf("Codigo invalido. Digite 1 para sim e 0 para não: ");
-            scanf("%d", &newL);
+            printf("Codigo invalido. Digite o codigo novamente:  ");
+            scanf(" %c", &newL);
             }
         }
-    }while(newL != 0);
+    }while(newL != 'N');
 
-    if(newL == 0){
+    if(newL == 'N'){
         printf("Numero de carros pesquisados: %d\n", numC);
         printf("Quilometragem total: %d\n", kmT);
         printf("Dados invalidos pelo usuario: %d\n", invalido);
