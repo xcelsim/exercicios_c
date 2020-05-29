@@ -5,7 +5,6 @@ int subtraiUm(int n){
     int x;
     x = n - 1;
     return x;
-
 }
 int main(){
     int y;
