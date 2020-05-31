@@ -111,7 +111,7 @@ int main(){
                     printf("Agora informe o tamanho da substring.\n");
                     scanf("%d", &t);
                     for(i = p, j = 0; i <= t + (p - 1), j <= t - 1; i++, j++)
-                    substring[j] = S1[i];
+                        substring[j] = S1[i];
                     printf("%s", substring);
                     break;
                 
