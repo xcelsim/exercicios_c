@@ -7,5 +7,5 @@ int main(){
         vetor[i] = 5 + i;
         S = vetor[i] + S;
     }
-    printf("A soma dos elementos do vetor é %d\n", S);
+    printf("A soma dos elementos do vetor é %d.\n", S);
 }
