@@ -19,15 +19,16 @@ int isPrime(int n){
 }
 
 int main(){
-    int vetor[5], i;
+    int vetor[50], i;
+    int primo = 0;
 
-    for(i = 0; i < 5; i++){
+    for(i = 0; i < 50; i++){
         scanf("%d", &vetor[i]);
     }
-    for(i = 0; i < 5; i++){
+    for(i = 0; i < 50; i++){
         if(isPrime(vetor[i])){
-            printf("\n%d\n", vetor[i]);
+            primo ++;
         }
     }
-
+    printf("\nO vetor tem %d numeros primos.\n", primo);
 }
