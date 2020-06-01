@@ -1,4 +1,4 @@
-/*Leia dois vetores inteiros X e Y, cada um com 5 elementos (assuma que o usuário não
+/*6) Leia dois vetores inteiros X e Y, cada um com 5 elementos (assuma que o usuário não
 informa elementos repetidos). Utilizando a estrutura switch case, faça:
 S. Soma entre cada elemento de X com o elemento da mesma posição Y.
 P. Produto entre cada elemento de X com o elemento da mesma posição Y.
@@ -14,8 +14,7 @@ int pertence(int n, int vetor[], int m){
     for(int i = 0; i < m; i++){
         if(n == vetor[i]){
             return 1;
-        }
-        
+        }        
     }
     return 0;
 
